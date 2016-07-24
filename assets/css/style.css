@@ -42,8 +42,9 @@
 }
 .profile-img-set {
   height: 300px;
-  width: 350px;
+  width: 300px;
   border-radius: 50%;
+  transform: rotate(-68deg);
 }
 .intro {
   font-size: 60px;
