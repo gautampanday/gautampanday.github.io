@@ -40,6 +40,10 @@
 .mrt-15 {
   margin-top: 15px;
 }
+.all-project a{
+  font-size: 25px;
+  text-decoration: underline !important;
+}
 .profile-img-set {
   height: 300px;
   width: 300px;
