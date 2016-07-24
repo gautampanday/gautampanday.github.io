@@ -1,0 +1,8 @@
+.landing-banner {
+  height:393px;
+  background :-webkit-gradient(linear, 0% 0%, 100% 0%, from(rgb(88, 224, 65)), to(rgb(47, 186, 206)));
+  padding: 190px 0;
+}
+.text-white {
+  color: #fff;
+}

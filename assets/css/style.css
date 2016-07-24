@@ -1,0 +1,78 @@
+* {
+  font-size: 15px;
+}
+
+.landing-banner {
+  min-height: 680px;
+  padding: 30px 0;
+  background:linear-gradient(to top, rgba(0, 0, 0, .5), 
+    rgba(0, 0, 0, 0)), 
+  url(../image/banner.png) no-repeat;
+}
+.banner {
+  background-size: cover;
+  background-position: center;
+}
+.text-white {
+  color: #fff !important;
+}
+.profile-name {
+  margin-left: 5%;
+}
+.banner-heading {
+  font-size: 38px;
+  letter-spacing: -2;
+  font-weight: 200;
+  font-family: cursive;
+}
+.section-space {
+  padding: 60px 0;
+}
+.logo {
+  font-size: 60px;
+  margin-left: 8%;
+}
+.used-tech {
+ background-color:grey;
+ padding: 12px 0;
+ color: #fff;
+}
+.mrt-15 {
+  margin-top: 15px;
+}
+.profile-img-set {
+  height: 300px;
+  width: 350px;
+  border-radius: 50%;
+}
+.intro {
+  font-size: 60px;
+  line-height: 54px;
+}
+.hiding {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+}
+.motto-icon {
+  font-size: 43px;
+  font-weight:bold;
+}
+.alt-banner {
+  background:linear-gradient(to top, rgba(0, 0, 0, .5), 
+    rgba(0, 0, 0, 0)), 
+  url(../image/alt-banner.jpg) no-repeat;
+  background-attachment: fixed;
+}
+.bx-wrapper {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+.bx-wrapper img {
+  max-width: inherit;
+}
+.bx-viewport img {
+  height: 70px;
+}
