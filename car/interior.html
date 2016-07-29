@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+  <title>Circlr.js Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style>
+#c{    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;}
+#circlr {
+  cursor: move;
+  margin: 0 auto;
+  min-height: 100px;
+  position: relative;
+}
+
+.menu{position:absolute;bottom:2%;right:1%}
+.sound{position:absolute;bottom:2%;let:1%}
+.magni{position:absolute;top:2%;left:1%}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+	opacity:0.9;
+}
+
+.sidenav a {
+    padding: 23px 8px 17px 82px;
+    text-decoration: none;
+    font-size: 21px;
+    color: #EC6B2B;
+    display: block;
+    transition: 0.3s;
+	    background: url(images/glow-line.png) no-repeat;
+    background-position: -163px 67px;
+	position:relative
+}
+
+
+.closebtn {
+    position: absolute;
+    bottom: 18px;
+    right: 28px;
+    background: url(images/menu-button-close.png);
+	height:60px;
+	width:60px
+}
+#mySidenav a img {display:inline-block;position:absolute;left:10px;top:5px} 
+html,body {height:100%}
+</style>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <div id="c">
+
+
+
+    <div class="row" style="margin:0;padding:0;height:100%">
+
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12" style="margin:0;padding:0;height:100%">
+
+        <div style="margin:0;padding:0;height:100%">
+          <div style="margin:0;padding:0;height:100%;position:relative">
+            <div id="circlr">
+              
+              <img data-src="images/3d/Interior/1.jpg">
+              <img data-src="images/3d/Interior/2.jpg">
+              <img data-src="images/3d/Interior/3.jpg">
+              <img data-src="images/3d/Interior/4.jpg">
+              <img data-src="images/3d/Interior/5.jpg">
+              <img data-src="images/3d/Interior/6.jpg">
+              <img data-src="images/3d/Interior/7.jpg">
+              <img data-src="images/3d/Interior/8.jpg">
+              <img data-src="images/3d/Interior/9.jpg">
+              <img data-src="images/3d/Interior/10.jpg">
+              <img data-src="images/3d/Interior/11.jpg">
+              <img data-src="images/3d/Interior/12.jpg">
+              <img data-src="images/3d/Interior/13.jpg">
+              <img data-src="images/3d/Interior/14.jpg">
+              <img data-src="images/3d/Interior/15.jpg">
+			  <img data-src="images/3d/Interior/16.jpg">
+			  <img data-src="images/3d/Interior/17.jpg">
+			  <img data-src="images/3d/Interior/18.jpg">
+			  <img data-src="images/3d/Interior/19.jpg">
+			  <img data-src="images/3d/Interior/20.jpg">
+			  <img data-src="images/3d/Interior/21.jpg">
+			  <img data-src="images/3d/Interior/23.jpg">
+			  <img data-src="images/3d/Interior/24.jpg">
+			  <img data-src="images/3d/Interior/25.jpg">
+			  <img data-src="images/3d/Interior/26.jpg">
+			  <img data-src="images/3d/Interior/27.jpg">
+			  <img data-src="images/3d/Interior/28.jpg">
+			  <img data-src="images/3d/Interior/29.jpg">
+			  <img data-src="images/3d/Interior/30.jpg">
+			  <img data-src="images/3d/Interior/31.jpg">
+			  <img data-src="images/3d/Interior/32.jpg">
+			  <img data-src="images/3d/Interior/33.jpg">
+			  <img data-src="images/3d/Interior/34.jpg">
+			  <img data-src="images/3d/Interior/35.jpg">
+			  <img data-src="images/3d/Interior/36.jpg">
+			  <img data-src="images/3d/Interior/38.jpg">
+			  <img data-src="images/3d/Interior/39.jpg">
+			  <img data-src="images/3d/Interior/40.jpg">
+			  <img data-src="images/3d/Interior/41.jpg">
+			  <img data-src="images/3d/Interior/42.jpg">
+			  <img data-src="images/3d/Interior/43.jpg">
+			  <img data-src="images/3d/Interior/44.jpg">
+			  <img data-src="images/3d/Interior/45.jpg">
+			  <img data-src="images/3d/Interior/46.jpg">
+			  <img data-src="images/3d/Interior/47.jpg">
+			  <img data-src="images/3d/Interior/48.jpg">
+			  <img data-src="images/3d/Interior/49.jpg">
+			  <img data-src="images/3d/Interior/50.jpg">
+			  <img data-src="images/3d/Interior/51.jpg">
+			  <img data-src="images/3d/Interior/52.jpg">
+			  <img data-src="images/3d/Interior/53.jpg">
+			  <img data-src="images/3d/Interior/54.jpg">
+			  <img data-src="images/3d/Interior/55.jpg">
+			  <img data-src="images/3d/Interior/56.jpg">
+			  <img data-src="images/3d/Interior/57.jpg">
+			  <img data-src="images/3d/Interior/58.jpg">
+			  <img data-src="images/3d/Interior/59.jpg">
+			  <img data-src="images/3d/Interior/60.jpg">
+			  <img data-src="images/3d/Interior/61.jpg">
+			  <img data-src="images/3d/Interior/62.jpg">
+			  <img data-src="images/3d/Interior/63.jpg">
+			  <img data-src="images/3d/Interior/64.jpg">
+			  <img data-src="images/3d/Interior/65.jpg">
+			  <img data-src="images/3d/Interior/66.jpg">
+			  <img data-src="images/3d/Interior/67.jpg">
+			  <img data-src="images/3d/Interior/68.jpg">
+			  <img data-src="images/3d/Interior/69.jpg">
+			  <img data-src="images/3d/Interior/71.jpg">
+			  <img data-src="images/3d/Interior/73.jpg">
+			  <img data-src="images/3d/Interior/74.jpg">
+			  <img data-src="images/3d/Interior/75.jpg">
+			  <img data-src="images/3d/Interior/76.jpg">
+			  <img data-src="images/3d/Interior/77.jpg">
+			  <img data-src="images/3d/Interior/78.jpg">
+			  <img data-src="images/3d/Interior/79.jpg">
+			  <img data-src="images/3d/Interior/80.jpg">
+			  <img data-src="images/3d/Interior/81.jpg">
+			  <img data-src="images/3d/Interior/82.jpg">
+			  <img data-src="images/3d/Interior/83.jpg">
+			  <img data-src="images/3d/Interior/84.jpg">
+			  <img data-src="images/3d/Interior/85.jpg">
+			  <img data-src="images/3d/Interior/86.jpg">
+			  <img data-src="images/3d/Interior/87.jpg"><img data-src="images/3d/Interior/88.jpg">
+			  <img data-src="images/3d/Interior/89.jpg">
+			  <img data-src="images/3d/Interior/90.jpg">
+			  <img data-src="images/3d/Interior/91.jpg">
+			  <img data-src="images/3d/Interior/92.jpg">
+			  <img data-src="images/3d/Interior/93.jpg">
+			  <img data-src="images/3d/Interior/94.jpg">
+			  <img data-src="images/3d/Interior/95.jpg">
+			  <img data-src="images/3d/Interior/96.jpg">
+			  <img data-src="images/3d/Interior/97.jpg">
+			  <img data-src="images/3d/Interior/98.jpg">
+			  <img data-src="images/3d/Interior/99.jpg">
+			  <img data-src="images/3d/Interior/100.jpg">
+			   <img data-src="images/3d/Interior/101.jpg">
+			    <img data-src="images/3d/Interior/102.jpg">
+				 <img data-src="images/3d/Interior/103.jpg">
+				  <img data-src="images/3d/Interior/104.jpg">
+				   <img data-src="images/3d/Interior/105.jpg">
+				    <img data-src="images/3d/Interior/106.jpg">
+					<img data-src="images/3d/Interior/107.jpg">
+					<img data-src="images/3d/Interior/108.jpg">
+					<img data-src="images/3d/Interior/109.jpg">
+					<img data-src="images/3d/Interior/110.jpg">
+					<img data-src="images/3d/Interior/111.jpg">
+					<img data-src="images/3d/Interior/112.jpg">
+					<img data-src="images/3d/Interior/113.jpg">
+					<img data-src="images/3d/Interior/114.jpg">
+					<img data-src="images/3d/Interior/115.jpg">
+					<img data-src="images/3d/Interior/116.jpg">
+					<img data-src="images/3d/Interior/117.jpg">
+					<img data-src="images/3d/Interior/118.jpg">
+					<img data-src="images/3d/Interior/119.jpg">
+					<img data-src="images/3d/Interior/120.jpg">
+	
+			  
+			  
+              
+            </div>
+			<img src="images/menu-button.png" class="menu img-responsive" onclick="openNav()">
+			<img src="images/audio-on.png" class="sound img-responsive">
+			<img src="images/magnifier-off.png" class="magni img-responsive">
+			<div id="mySidenav" class="sidenav">
+  <span class="closebtn" onclick="closeNav()"></span>
+  <a href="#"><img src="images/gallery-icon.png" class="img-responsive">GALLERY</a>
+  <a href="car.html"><img src="images/360-icon.png" class="img-responsive">EXTERIOR</a>
+  <a href="interior.html"><img src="images/360-icon.png" class="img-responsive">INTERIOR</a>
+  <a href="#"><img src="images/color-icon.png" class="img-responsive">COLOR</a>
+  <a href="#"><img src="images/info-icon.png" class="img-responsive">INFO</a>
+</div>
+          </div>
+        </div>
+
+
+
+
+
+      <!--  <div class="col-sm-4 text-center">
+          <h4>Autoplay</h4>
+          <p>
+            <a href="#" class="btn btn-default" onclick="crl.play(); return false;">Play</a>
+            <a href="#" class="btn btn-default" onclick="crl.stop(); return false;">Stop</a>
+          </p>
+        </div>-->
+
+      </div>
+
+    </div>
+
+  </div>
+	 <div id="loader" style="margin:0;padding:0;height:100%;background:url(images/pattern_50.jpg);display:none">
+ <div style="margin:0;padding:0;height:100%;position:relative">
+ <img src="images/logo.png" style="width: 55%;position: absolute;bottom: 15%;left: 22%;">
+ <img src="images/ajax-loader.gif" style="position: absolute;top: 35%;left: 34%;>
+ </div></div>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="circlr.min.js"></script>
+  <script src="circlr.min.js"></script>
+<!-- <script>
+$(document).ready(function() {
+	var total_images = $("body img").length;
+	var images_loaded = 0;
+
+	$("body").find('img').each(function() {
+		var fakeSrc = $(this).attr('src');
+		$("<img/>").attr("src", fakeSrc).css('display', 'none').load(function() {
+			images_loaded++;
+			if (images_loaded >= total_images) {
+				// now all images are loaded.
+				//alert("all images are loaded. Click OK to view.")
+				$("#car").show();
+				$("#loader").hide();
+			}
+		});
+
+	});
+
+});
+</script> -->
+  <script type="text/javascript">
+    var crl = circlr('circlr', {
+      scroll : true,
+      loader : 'loader'
+    });
+  </script>
+  <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</body>
+</html>
