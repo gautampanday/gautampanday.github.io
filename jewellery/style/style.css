@@ -1,0 +1,88 @@
+#containment-wrapper { width: 75%; height:75%; margin:auto;  }
+   img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+    .picSize{
+      height: 30px;
+      width: 20px;
+    }
+    
+    input[type=range][orient=vertical]
+{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 175px;
+    padding: 0px;
+    left: 20px;
+}
+  .zoomRanges{
+            position: absolute;
+                left: 9%;
+                top: 6%;
+    }
+   hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#containment-wrapper1{
+  width: 100%;
+  border:2px solid #ccc;
+  /*padding: 10px;*/
+  display:none;
+} 
+
+#pic{
+  display: none;
+  position: absolute;
+  left: 40px;
+    top: 78px; 
+}
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .fontColor-Style{
+    font-size: 27px;
+    color:white;
+}
+a {
+    text-decoration: none !important;
+}
+div.item {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    /* The width of the container also implies margin around the images. */
+    width: 80px;
+     border: 1px solid grey;
+}
+.item img {
+    width: 66px;
+    height: 60px;
+    /*background-color: grey;*/
+}
+.caption {
+  display: block;
+}
+#sideBars {
+    top: 49px;
+    width: 261px;
+    bottom: 0px;
+    background: #eee;
+}
+.sideBar{
+  color: black; 
+  font-size: 14px;
+  padding: 8px;
+}
