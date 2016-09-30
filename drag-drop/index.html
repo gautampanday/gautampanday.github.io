@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="keyword" content="website Design, UI Design, UX Design, PSD to HTML,Angular Developer, Brand Identity, website development, responsive design, parallax design">
+    <meta name="description" content="I am Gautam Pandey Freelance Web Designer/Developer. I craft handsome sites & stunning web portals that empower your business.">
+    <meta name="author" content="Gautam Pandey- Web Designer Developer">
+  <link href="http://gautampandey.com/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://gautampandey.com/assets/lib/font-awesome/css/font-awesome.min.css">
+  <link href="http://gautampandey.com/assets/css/style.css" rel="stylesheet">
+  <link href="http://gautampandey.com/assets/css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://gautampandey.com/assets/css/lib/animate.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="http://gautampandey.com/assets/css/lib/jquery.bxslider.css" type="text/css" media="all" />
+  <script src="http://gautampandey.com/assets/js/lib/jquery-1.11.0.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="http://files.codepedia.info/uploads/iScripts/html2canvas.js"></script>
+  <link href="https://bgrins.github.io/spectrum/spectrum.css" rel="stylesheet">
+  <style>
+  
+  	.appendText{
+  	position: absolute;
+    top: 43%;
+    left: 11%;
+    display: inline-block;
+    z-index: 9;
+  	}
+    .imgInp, .preview-btn{
+      display: inline-block !important;
+
+    }
+    .draggableData{
+      max-width: 200px;
+      max-height: 200px;
+      position: absolute;
+      left: 10px;
+      z-index: 1;
+    }
+
+    .imgInp{
+      max-width: 222px;
+    }
+    .margin-15{
+      margin-top:15px;
+      margin-bottom: 15px;
+    }
+    .inline-display{
+      display: inline-block;
+    }
+    .sp-replacer{
+      margin: 15px !important;
+    }
+    .pad-15{
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    @font-face {
+    font-family: 'Abel-Regular';
+    src: url(Abel-Regular.ttf);
+  }
+    @font-face {
+    font-family: 'Alegreya-Black';
+    src: url(Alegreya-Black.otf);
+}
+@font-face {
+    font-family: 'Alice-Regular';
+    src: url(Alice-Regular.ttf);
+}
+@font-face {
+    font-family: 'Allura-Regular';
+    src: url(Allura-Regular.ttf);
+}
+@font-face {
+    font-family: 'Asul-Regular';
+    src: url(Asul-Regular.ttf);
+  }
+  @font-face {
+    font-family: 'Asul-Bold.ttf';
+    src: url(Asul-Bold.ttf);
+  }
+
+
+
+  </style>
+</head>
+<title>
+Gautam Pandey | home
+</title>
+<body>
+<div class="col-md-6" >
+<div id="img-container" >
+<div id="html-content-holder">
+<div class="text-container">
+
+</div>
+<div class="collection-img">
+	<img src="92editor-overlay.png" id="containment-wrapper" height="300" width="300" style="    ">
+	
+    </div>
+</div>
+</div>
+
+</div>
+<div class="col-md-6">
+  <div class="input_fields_wrap">
+  <label>Add Input Field</label>
+    <button class="add_field_button btn btn-primary margin-15">Add Fields</button>
+    <br>
+    <label>Upload Image</label>
+    <input type='file' class="btn btn-primary imgInp margin-15" value="Upload Image" />
+    <input id="btn-Preview-Image" type="button" class="btn btn-warning preview-btn margin-15" value="Preview Result"/>
+  </div>
+  
+</div>
+<div id="previewImage">
+ </div>
+ <script src="https://bgrins.github.io/spectrum/spectrum.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+    var max_fields      = 10; //maximum input boxes allowed
+    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+    var add_button      = $(".add_field_button"); //Add button ID
+
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        $("#custom").spectrum({
+          color: "#f00"
+      });
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div id="inputId'+x+'"><div class="col-md-6"><input type="text" name="mytext[]" placeholder="input Text here" class="form-control inputData"/></div><div class="custom-select col-md-3"><select class="font-face form-control select-selector"><option value="">Font Family</option><option value="Abel-Regular">Abel-Regular</option><option value="Alegreya-Black">Alegreya-Black</option><option value="Alice-Regular">Alice-Regular</option><option value="Allura-Regular">Allura-Regular</option><option value="Asul-Bold">Asul-Bold</option><option value="Asul-Regular">Asul-Regular</option><option value="BreeSerif-Regular">BreeSerif-Regular</option><option value="CabinSketch-Regular">CabinSketch-Regular</option><option value="CaesarDressing-Regular">CaesarDressing-Regular</option><option value="Cookie-Regular">Cookie-Regular</option><option value="CreteRound-Italic">CreteRound-Italic</option><option value="CreteRound-Regular">CreteRound-Regular</option><option value="CrimsonText-Bold">CrimsonText-Bold</option><option value="Dhyana">Dhyana</option><option value="Electrolize-Regular">Electrolize-Regular</option><option value="Enriqueta-Bold">Enriqueta-Bold</option><option value="Exo-Black">Exo-Black</option><option value="Marvel-Regular">Marvel-Regular</option><option value="NeutonCursive-Regular">NeutonCursive-Regular</option><option value="Pacifico-Regular">Pacifico-Regular</option><option value="Playball-Regular">Playball-Regular</option><option value="Cutive-Regular">Cutive-Regular</option><option value="Economica-Bold">Economica-Bold</option><option value="Futura-Medium">Futura-Medium</option></select></div><div class="custom-select-size col-md-3">                 <select class="size form-control select-selector-size"><option value="">Font Size</option><option value="8.126410835214447">8</option><option value="10.126410835214447">10</option><option value="12.126410835214447">12</option><option value="14.126410835214447">14</option><option value="16.126410835214447">16</option><option value="18.126410835214447">18</option><option value="20.126410835214447">20</option><option value="22.126410835214447">22</option><option value="24.126410835214447">24</option><option value="26.126410835214447">26</option><option value="28.126410835214447">28</option><option value="30.126410835214447">30</option><option value="32.12641083521444">32</option><option value="34.12641083521444">34</option><option value="36.12641083521444">36</option><option value="38.12641083521444">38</option><option value="40.12641083521444">40</option><option value="42.12641083521444">42</option><option value="44.12641083521444">44</option><option value="46.12641083521444">46</option><option value="48.12641083521444">48</option><option value="50.12641083521444">50</option><option value="52.12641083521444">52</option><option value="54.12641083521444">54</option><option value="56.12641083521444">56</option><option value="58.12641083521444">58</option><option value="60.12641083521444">60</option><option value="62.12641083521444">62</option><option value="64.12641083521444">64</option><option value="66.12641083521444">66</option><option value="68.12641083521444">68</option><option value="70.12641083521444">70</option><option value="72.12641083521444">72</option><option value="74.12641083521444">74</option><option value="76.12641083521444">76</option><option value="78.12641083521444">78</option><option value="80.12641083521444">80</option><option value="82.12641083521444">82</option><option value="84.12641083521444">84</option><option value="86.12641083521444">86</option><option value="88.12641083521444">88</option><option value="90.12641083521444">90</option><option value="92.12641083521444">92</option><option value="94.12641083521444">94</option><option value="96.12641083521444">96</option><option value="98.12641083521444">98</option></select></div><div class="row pad-15"><div class="col-md-4"><a href="#" class="remove_field btn btn-danger margin-15">Remove All Styles</a></div><div class="col-md-8"><input type="text" id="custom" class="form-control margin-15 inline-display" /></div></div></div> <hr>');
+            $(".text-container").append('<h3 class="appendText inputId'+x+'" id="draggable'+x+'"></h3>'); //add input box
+
+            $("#draggable"+x).draggable({ containment: "#containment-wrapper", scroll: false });
+    
+        }
+
+    });
+    
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); 
+        $(this).parent('div').remove(); 
+       var test= $(this).parent('div').attr('id');
+       $("."+test).remove();
+        x--;
+    })
+
+    $('.input_fields_wrap').on('change propertychange paste keyup', 'input.inputData', function() {
+    	var testVal = $(this).val();
+    	var test = $(this).parent().parent("div").attr("id");
+    	$("."+test).text(testVal);
+
+});
+
+
+    var element = $("#html-content-holder"); // global variable
+    var getCanvas; // global variable
+ 
+    $("#btn-Preview-Image").on("click", function(event) {
+    html2canvas(element, {
+  onrendered: function(canvas) {
+  	$("#previewImage").empty();
+    $("#previewImage").append(canvas);
+      try {
+      var img = canvas.toDataURL('image/jpeg', 0.9).split(',')[1];
+  } catch(e) {
+      var img = canvas.toDataURL().split(',')[1];
+  }
+  // open the popup in the click handler so it will not be blocked
+  var w = window.open();
+  w.document.write('Uploading...');
+  // upload to imgur using jquery/CORS
+  // https://developer.mozilla.org/En/HTTP_access_control
+  $.ajax({
+      url: 'http://api.imgur.com/2/upload.json',
+      type: 'POST',
+      data: {
+          type: 'base64',
+          // get your key here, quick and fast http://imgur.com/register/api_anon
+          key: 'your',
+          name: 'neon.jpg',
+          title: 'test title',
+          caption: 'test caption',
+          image: img
+      },
+      dataType: 'json'
+  }).success(function(data) {
+      w.location.href = data['upload']['links']['imgur_page'];
+  }).error(function() {
+      alert('Could not reach api.imgur.com. Sorry :(');
+      w.close();
+  });
+  },
+  });
+  });
+    
+    $(document.body).on('change',".select-selector",function (e) {
+   //doStuff
+   console.log("inside select");
+   var getId = $(this).parent().parent().attr("id");
+   console.log("getid is ",getId);
+   $("."+getId).css("font-family",$(this).val());
+    });
+    $(document.body).on('change',".select-selector-size",function (e) {
+   //doStuff
+   var getId = $(this).parent().parent().attr("id");
+   console.log("getid is size ",getId);
+   $("."+getId).css("font-size",$(this).val()+"px");
+    });
+
+    $("#custom").spectrum({
+    color: "#f00"
+});
+    
+});
+</script>
+<script type="text/javascript">
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+
+                $('.drag-img').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+    $(".imgInp").change(function(){
+     $(".collection-img").append('<img class="drag-img draggableData" src="#">');
+     $( ".draggableData" ).draggable({ containment: "#containment-wrapper", scroll: false });
+        readURL(this);
+    });
+    $( ".draggableData" ).draggable({ containment: "#containment-wrapper", scroll: false });
+</script>
+</body>
+</html>
