@@ -19,13 +19,13 @@
   <link href="https://bgrins.github.io/spectrum/spectrum.css" rel="stylesheet">
   <style>
   
-  	.appendText{
-  	position: absolute;
+    .appendText{
+    position: absolute;
     top: 43%;
     left: 11%;
     display: inline-block;
     z-index: 9;
-  	}
+    }
     .imgInp, .preview-btn{
       display: inline-block !important;
 
@@ -95,8 +95,8 @@ Gautam Pandey | home
 
 </div>
 <div class="collection-img">
-	<img src="92editor-overlay.png" id="containment-wrapper" height="300" width="300" style="    ">
-	
+  <img src="92editor-overlay.png" id="containment-wrapper" height="300" width="300" style="    ">
+  
     </div>
 </div>
 </div>
@@ -117,7 +117,7 @@ Gautam Pandey | home
  </div>
  <script src="https://bgrins.github.io/spectrum/spectrum.js"></script>
 <script type="text/javascript">
-	$(document).ready(function() {
+  $(document).ready(function() {
     var max_fields      = 10; //maximum input boxes allowed
     var wrapper         = $(".input_fields_wrap"); //Fields wrapper
     var add_button      = $(".add_field_button"); //Add button ID
@@ -141,16 +141,16 @@ Gautam Pandey | home
     
     $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
         e.preventDefault(); 
-        $(this).parent('div').remove(); 
+        $(this).parent().parent().parent('div').remove(); 
        var test= $(this).parent('div').attr('id');
        $("."+test).remove();
         x--;
     })
 
     $('.input_fields_wrap').on('change propertychange paste keyup', 'input.inputData', function() {
-    	var testVal = $(this).val();
-    	var test = $(this).parent().parent("div").attr("id");
-    	$("."+test).text(testVal);
+      var testVal = $(this).val();
+      var test = $(this).parent().parent("div").attr("id");
+      $("."+test).text(testVal);
 
 });
 
@@ -161,7 +161,7 @@ Gautam Pandey | home
     $("#btn-Preview-Image").on("click", function(event) {
     html2canvas(element, {
   onrendered: function(canvas) {
-  	$("#previewImage").empty();
+    $("#previewImage").empty();
     $("#previewImage").append(canvas);
       try {
       var img = canvas.toDataURL('image/jpeg', 0.9).split(',')[1];
