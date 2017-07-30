@@ -12,30 +12,75 @@
   <link href="assets/css/responsive.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/lib/animate.css" type="text/css" media="all" />
   <link rel="stylesheet" href="assets/css/lib/jquery.bxslider.css" type="text/css" media="all" />
-  <script src="assets/js/lib/jquery-1.11.0.min.js"></script>
+  <link href='assets/css/jquery.instashow.css' rel='stylesheet'>
+    <link href='assets/css/plyr.css' rel='stylesheet'>
+    <link href='assets/css/main.css' rel='stylesheet'>
+    <script src='assets/js/modernizr.min.js'></script>
 </head>
 <title>
 Gautam Pandey | home
 </title>
 <body>
-<section class="landing-banner banner">
-  <div class="container">
-    <div class="profile-name">
-    <span class="glyphicon glyphicon-globe text-white animated bounce logo text-center"></span>
-      <h1 class="text-white animated fadeInDownBig">Gautam Pandey<br><small>Web Designer/Developer</small></h1>
+  <div class='section-intro'>
+
+      <div class='wrap'>
+
+        <div class='bg'></div>
+        <div class='video-bg'></div>
+
+        <svg id='wiper'>
+          <defs>
+            <linearGradient id='grad' x1='0' x2='0' y1='0' y2='100%'>
+              <stop offset='0%' stop-color='#485424' stop-opacity='1'></stop>
+              <stop offset='50%' stop-color='#333c21' stop-opacity='1'></stop>
+              <stop offset='100%' stop-color='#e1f38f' stop-opacity='1'></stop>
+            </linearGradient>
+          </defs>
+          <g>
+            <path d='m1,1' fill='url(#grad)'></path>
+          </g>
+        </svg>
+
+        <div class='slides'>
+          <div class='slide slide-1'>
+            <div class='slide-wrapper'>
+              <div class='inner' style="padding-right: 272px;">
+                <h1 class="text-white animated fadeInDownBig" style="font-size: 55px">Gautam Pandey<br><small>Web Designer/Developer<br></small></h1>
+
+               
+              </div>
+            </div>
+          </div>
+          <div class='slide slide-2'>
+            <div class='slide-wrapper'>
+              <div class='inner'>
+                <p>I've always been drawn to the overlap between design and development. My skills are broad: from front end to back end development. I enjoy each aspect, and love building sites & mobile apps from start to finish.</p>
+              </div>
+            </div>
+          </div>
+          <div class='slide slide-3'>
+            <div class='slide-wrapper'>
+              <div class='inner'>
+                <h1>My Motto<br><small>Simple Neat and Clean Design</small></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="logo-main init"><span class="i1"><img  class="profile-img-set" src="assets/image/gautam.jpg" style="position: absolute;
+    display: block;
+    z-index: 9999000;
+    top: 0;
+    left: 0;"></span></span>
+      </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <div class="col-sm-6 text-center-xs animated hiding" data-animation="fadeInDown" data-delay="500">
-      <img src="assets/image/gautam.jpg" class="profile-img-set" alt="gautam">
-    </div>
-    <div class="col-sm-6 text-center-xs">
-      <h1 class="text-white intro animated hiding" data-animation="fadeInDown" data-delay="500">Hello,<br><small class="text-white">a bit about me:</small></h1>
-      <p class="text-white animated hiding" data-animation="fadeInDown" data-delay="500">I spend most of my time coding. I love to build responsive design, illustration and passionate for coding. I always love my work. I'm currently working with startup <strong>Farmguide Pvt. Ltd.</strong> I just loved my time working in Farmguide</p>
-    </div>
-  </div>
-</section>
+
+    <div class='content-sections '>
+     
+      <section class='section section-clients' id='clients'>
+        <div class='wrap'>
+          <div class='inner'>
+            <div>
+             
 <section class="used-tech">
   <div class="container">
     <div class="col-sm-2 text-center mrt-15">
@@ -48,38 +93,85 @@ Gautam Pandey | home
         <div class="slide"><img src="assets/image/bootstrap.png" alt="bootstrap"></div>
         <div class="slide"><img src="assets/image/jquery.png" alt="jquery"></div>
         <div class="slide"><img src="assets/image/angular.png" alt="angular"></div>
+        <div class="slide"><img src="assets/image/nodejs.png" alt="angular"></div>
       </div>
     </div>
 </div>
 </section>
-<section class="section-space animated hiding" data-animation="fadeInDown" data-delay="500">
-  <div class="container">
-    <div class="text-center">
-      <h1>My Motto<br><small>Simple Neat and Clean Design</small></h1>
+ <section class="section-space alt-banner all-project">
+    <div class="container-fluid">
+      <h2 class="text-center text-white animated hiding" style="margin:0"data-animation="fadeInDown" data-delay="200">My Achivement<br><small class="text-white">My Work is My Achivement</small></h2>
       <br>
       <br>
-      <div class="col-sm-3 animated hiding" data-animation="fadeInDown" data-delay="200">
-        <i class="fa fa-code motto-icon"></i>
-        <h2>Strategy</h2>
-        <p>Web design isn’t art. It involves a whole collection of different skills — from copywriting and typography to layout and art — all fused together to create an interface that not only features a pleasant aesthetic.</p>
+      <div class="col-sm-3 text-white text-center animated hiding" data-animation="flipInY" data-delay="200">
+        <i class="fa fa-code motto-icon text-center"></i>
+        <h2><a href="http://metrics.farmguide.in" target="_blank" class="text-white">Farmguide Metrics</a></h2>
+       
       </div>
-      <div class="col-sm-3 animated hiding" data-animation="fadeInDown" data-delay="200">
+      <div class="col-sm-3 text-white text-center animated hiding" data-animation="flipInY" data-delay="500">
         <i class="fa fa-code motto-icon"></i>
-        <h2>Design</h2>
-        <p>When i will try to design a great website it is very easy to focus on making something aesthetically pleasing while forgetting to make sure that the website also achieves your business’ online goals.</p>
+        <h2><a href="http://aitutravels.com" target="_blank" class="text-white">Aitu Travels</a>
+        
       </div>
-      <div class="col-sm-3 animated hiding" data-animation="fadeInDown" data-delay="200" >
+      <div class="col-sm-3 text-white text-center animated hiding" data-animation="flipInY" data-delay="800">
         <i class="fa fa-code motto-icon"></i>
-        <h2>Development</h2>
-        <p>As an emerging discipline, Web engineering actively promotes systematic, disciplined and quantifiable approaches towards successful development of high-quality, ubiquitously usable Web-based systems and applications</p>
+        <h2><a class="text-white" target="_blank" href="http://fulfil.io">Fulfil.io</a></h2>
+        
       </div>
-      <div class="col-sm-3 animated hiding" data-animation="fadeInDown" data-delay="200">
+      <div class="col-sm-3 text-white text-center animated hiding" data-animation="flipInY" data-delay="800">
         <i class="fa fa-code motto-icon"></i>
-        <h2>Engineer</h2>
-        <p>Web designers are architects of the web. They focus on the look and feel of the website; and so, they should be visual arts experts, who are skilled in color scheming, graphic design and information flow.</p>
+        <h2><a class="text-white" target="_blank" href="https://buymestuff.com.au">Buy Me Stuff</a></h2>
+        
+      </div>
+      <div class="col-sm-3 text-white text-center animated hiding" data-animation="flipInY" data-delay="800">
+        <i class="fa fa-code motto-icon"></i>
+        <h2><a class="text-white" target="_blank" target="_blank" href="/car">Gaming Layout For Car</a></h2>
+        
+      </div>
+      <div class="col-sm-3 text-white text-center animated hiding" data-animation="flipInY" data-delay="800">
+        <i class="fa fa-code motto-icon"></i>
+        <h2><a class="text-white" href="http://sk-intl.net" target="_blank">S.K. International</a></h2>
+        
+      </div>
+      <div class="col-sm-3 text-white text-center animated hiding" data-animation="flipInY" data-delay="800">
+        <i class="fa fa-code motto-icon"></i>
+        <h2><a class="text-white" href="https://www.lie-nielsen.com" target="_blank">Lie Nielsen Toolwork</a></h2>
+        
+      </div>
+      <div class="col-sm-3 text-white text-center animated hiding" data-animation="flipInY" data-delay="800">
+        <i class="fa fa-code motto-icon"></i>
+        <h2><a class="text-white" href="http://sandwichbikes.com" target="_blank">Sandwich Bikes</a></h2>
+        
+      </div>
+      <div class="col-sm-3 text-white text-center animated hiding" data-animation="flipInY" data-delay="800">
+        <i class="fa fa-code motto-icon"></i>
+        <h2><a class="text-white" href="http://www.nortonsupply.com" target="_blank">Norton Supply</a></h2>
+        
+      </div>
+      <div class="col-sm-3 text-white text-center animated hiding" data-animation="flipInY" data-delay="800">
+        <i class="fa fa-code motto-icon"></i>
+        <h2><a class="text-white" href="http://ticketemi.com" target="_blank">Ticket EMI Travel Site</a></h2>
+        
+      </div>
+      <div class="col-sm-3 text-white text-center animated hiding" data-animation="flipInY" data-delay="800">
+        <i class="fa fa-code motto-icon"></i>
+        <h2><a class="text-white" href="http://cakekhao.com" target="_blank">CakeKhao Checkout Cart</a></h2>
+        
+      </div>
+      <div class="col-sm-3 text-white text-center animated hiding" data-animation="flipInY" data-delay="800">
+        <i class="fa fa-code motto-icon"></i>
+        <h2><a class="text-white" href="assets/lib/gautam_Resume.pdf" download>Get My Resume To Know More</a></h2>
+        
       </div>
     </div>
-  </div>
+  </section>
+  <section class="alt-banner text-white">
+    <div class="container">
+    
+      <div class="col-md-12 text-center">
+        <a class="btn btn-info mrt-15" href="assets/lib/gautam_Resume.pdf" download>Get My Resume</a>
+      </div>
+    </div>
   </section>
   <section class="section-space alt-banner all-project">
     <div class="container">
@@ -168,6 +260,77 @@ Gautam Pandey | home
       </div>
     </div>
   </section>
+              <!--<ul class='client-list'>
+                
+                <li class='tapp'>
+                  <i><img src="img/clients/tapp.svg" alt="Tapp"></i>
+                  <blockquote>
+                    
+                    <footer class='author'>
+                      <p>
+                        <span class='img'><img src="img/clients/warren-sample.jpg" alt="Warren Sample"></span>
+                      </p>
+                    </footer>
+                  </blockquote>
+                </li>
+                <li class='nowness'>
+                  <i><img src="img/clients/nowness.svg" alt="Nowness"></i>
+                  <blockquote>
+                    
+                    <footer class='author'>
+                      <p>
+                        <span class='img'><img src="img/clients/daniel-coutinho.jpg" alt="Daniel Coutinho"></span>
+                      </p>
+                    </footer>
+                  </blockquote>
+                </li>
+              </ul>-->
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+    <div class='work-details'>
+      
+      <div class='items-wrapper'>
+        <div class='shadow'></div>
+        <div class='items'>
+          <section class='item virry' data-bg='bg-project-virry.jpg'>
+            <div class='wrap'>
+              <div class='container'>
+                <div class='inner'>
+                  <div class='featured-in'>
+                    <img alt='Featured in' src='img/virry-featured-in.png' width='347'>
+                  </div>
+                   <div class='featured-in'>
+                    <img alt='Featured in' src='img/work/details/serenebook-featured-in.png' width='351'>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class='loader'>
+      <div class='bar'>
+        <div class='progress'></div>
+      </div>
+    </div>
+
+
+
+
+
+
 <script>
 function animationHover(element, animation){
     element = $(element);
@@ -201,10 +364,24 @@ $(document).ready(function(){
   });
 });
 </script>
+<script src='assets/js/jquery.min.js'></script>
 <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/lib/jquery.appear.js"></script>
 <script type="text/javascript" src="assets/js/scripts.js"></script>
 <script type="text/javascript" src="assets/js/lib/jquery.bxslider.min.js"></script>
+
+    <script src='assets/js/handlebars.runtime.js'></script>
+    <script src='assets/js/jquery.instashow.js?1'></script>
+    <script src='assets/js/plyr.js'></script>
+    <script src='assets/js/app.js'></script>
+
+    <script>
+      
+
+      plyr.setup({
+        controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'fullscreen']
+      });
+    </script>
 <script>
 $(document).ready(function(){
   $('.client-slider').bxSlider({
